@@ -7,7 +7,7 @@ Files:
 
 Build (Windows with MinGW-w64):
 
-1. Open a terminal in the project folder (c:\Users\laksh\OneDrive\Desktop\MyPrograms).
+1. Open a terminal in the project folder any one ur choice.
 2. Compile:
 
    C:\mingw64\bin\gcc.exe -g server.c -o server.exe -lws2_32
@@ -22,3 +22,4 @@ Notes:
 - The server serves `index.html` and `styles.css` from the same directory.
 - The `/suggest?genre=...` route returns simple hard-coded suggestions.
 - No Python is used.
+
