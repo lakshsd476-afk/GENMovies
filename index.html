@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Movie Suggestions</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="hero">
+    <div class="hero-inner">
+      <h1>Movie Suggestions</h1>
+      <p>Pick a genre and get curated picks — powered by a tiny C server.</p>
+      <form method="GET" action="/suggest" class="search-form">
+        <label for="genre" class="visually-hidden">Genre</label>
+        <select id="genre" name="genre">
+          <option value="Any">Any</option>
+          <option value="Action">Action</option>
+          <option value="Comedy">Comedy</option>
+          <option value="Drama">Drama</option>
+          <option value="Sci-Fi">Sci-Fi</option>
+          <option value="Horror">Horror</option>
+          <option value="Animation">Animation</option>
+          <option value="Thriller">Thriller</option>
+          <option value="Romance">Romance</option>
+          <option value="Documentary">Documentary</option>
+        </select>
+
+        <label for="lang" class="visually-hidden">Language</label>
+        <select id="lang" name="lang">
+          <option value="Any">All Languages</option>
+          <option value="Hollywood">Hollywood (English)</option>
+          <option value="Bollywood">Bollywood (Hindi)</option>
+          <option value="Telugu">Telugu</option>
+          <option value="Tamil">Tamil</option>
+          <option value="Kannada">Kannada</option>
+          <option value="Malayalam">Malayalam</option>
+          <option value="Regional">Indian Regional</option>
+        </select>
+
+        <button type="submit">Suggest</button>
+      </form>
+    </div>
+  </div>
+
+  <main class="container">
+    <section class="intro">
+      <h2>Top Picks</h2>
+      <p>Try a genre above or explore our popular picks below.</p>
+      <div class="grid">
+        <div class="tile">Interstellar</div>
+        <div class="tile">Parasite</div>
+        <div class="tile">The Grand Budapest Hotel</div>
+        <div class="tile">Mad Max: Fury Road</div>
+      </div>
+    </section>
+    <footer>
+      <p>Simple site — backend in C, frontend in HTML/CSS.</p>
+    </footer>
+  </main>
+</body>
+</html>
